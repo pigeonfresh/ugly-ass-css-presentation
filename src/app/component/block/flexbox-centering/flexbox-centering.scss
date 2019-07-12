@@ -1,0 +1,12 @@
+.flexbox-centering {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .example-wrapper {
+    border: 10px solid magenta;
+    padding: 2rem;
+  }
+}

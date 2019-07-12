@@ -1,0 +1,78 @@
+.epic-selectors {
+
+  .code {
+    padding: 2rem 1rem;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: mediumspringgreen;
+      opacity: 0.5;
+      z-index: -1;
+      content: '';
+    }
+  }
+
+  .example-list {
+    padding: 20px;
+  }
+
+  .example {
+    border: 1px solid magenta;
+    margin: 1rem 0;
+    padding: 2rem;
+  }
+
+  .example-nth-child-pattern {
+    .item {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      border: 1px solid magenta;
+
+      &:nth-child(3n+5) {
+        background: magenta;
+      }
+    }
+  }
+
+  .example-nth-child {
+    .item {
+      &:nth-child(2) {
+        background: magenta;
+      }
+    }
+  }
+
+  .example-nth-child-vs-type {
+    div:nth-child(4) {
+      background: magenta;
+    }
+
+    div:nth-of-type(4) {
+      background: blue;
+    }
+  }
+
+  .example-not {
+    .item:not(:nth-child(4)) {
+      background: magenta;
+    }
+  }
+
+  .example-first-last {
+    .item {
+      &:first-child {
+        background: blue;
+      }
+
+      &:last-child {
+        background: magenta;
+      }
+    }
+  }
+}

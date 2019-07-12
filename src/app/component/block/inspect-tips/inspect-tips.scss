@@ -1,0 +1,15 @@
+/* stylelint-disable-next-line block-no-empty */
+.inspect-tips {
+
+  .box {
+    margin: 3rem;
+    width: 100px;
+    height: 100px;
+    background: magenta;
+    transition: background-color 250ms ease-in-out;
+
+    &.is-active {
+      background: mediumaquamarine;
+    }
+  }
+}

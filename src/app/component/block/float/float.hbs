@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="./float.scss">
+<script src="./Float.ts"></script>
+
+<div class="float" data-component="float">
+  <h1>float</h1>
+  <p>
+    Floats are retracted from the dom and collapse the natural flow of elements. So had to do the clear-fix hack or life with the question why HTML hated you.
+    <br>
+    Furthermore you almost every time had to do a width of 33.3333333333333%.
+    (just add an extra 3. Just to be sure).
+  </p>
+  <div class="example-wrapper">
+
+    <ul class="list">
+      <li class="list-item">
+        <img src="http://placehold.it/800x800" alt="">
+      </li>
+      <li class="list-item">
+        <img src="http://placehold.it/800x800" alt="">
+      </li>
+      <li class="list-item">
+        <img src="http://placehold.it/800x800" alt="">
+      </li>
+    </ul>
+
+  </div>
+  {{> ugly-ass-link href="display-inline-block" }}
+</div>

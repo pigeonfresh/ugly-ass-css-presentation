@@ -1,0 +1,19 @@
+.float {
+
+  .list {
+    background: red;
+
+    &::after {
+      display: block;
+      clear: both;
+      content: '';
+    }
+  }
+
+  .list-item {
+    width: 33.33333333333%;
+    float: left;
+    opacity: 0.5;
+  }
+
+}

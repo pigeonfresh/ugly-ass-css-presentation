@@ -1,0 +1,12 @@
+.flexbox {
+  .list {
+    display: flex;
+    flex-direction: row;
+    background: red;
+  }
+
+  .list-item {
+    opacity: 0.8;
+    font-size: 12px;
+  }
+}

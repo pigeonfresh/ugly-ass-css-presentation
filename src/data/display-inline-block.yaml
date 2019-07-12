@@ -1,0 +1,11 @@
+title: DisplayInlineBlock
+
+meta:
+  id: '' # can be number or string, used for ordering
+  status: '' # dev, qa, feedback, done
+  notes: '' # add some information about the page
+  category: '' # to group pages in the overview
+
+blocks:
+  - name: "display-inline-block"
+    data: "import!../app/component/block/display-inline-block/data.yaml"  

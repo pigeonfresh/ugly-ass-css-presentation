@@ -1,0 +1,52 @@
+.current-color {
+
+  .example-wrapper {
+    color: magenta;
+  }
+
+  .foo {
+    padding: 20px;
+    border: 1px solid currentColor;
+    background: linear-gradient(transparent, currentColor);
+
+    p {
+      color: mediumspringgreen;
+      border: 1px solid currentColor;
+    }
+  }
+
+  .link.primary {
+    color: magenta;
+  }
+
+  .link.secondary {
+    color: mediumspringgreen;
+  }
+
+  .link {
+    margin: 10px 0;
+    background: currentColor;
+    display: block;
+    padding: 10px;
+
+    .copy {
+      color: currentColor;
+      border: 10px dotted currentColor;
+      background: black;
+      display: block;
+      padding: 10px;
+      position: relative;
+
+      &::after {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        right: 0;
+        background: currentColor;
+        opacity: 0.5;
+        content: '';
+      }
+    }
+  }
+}

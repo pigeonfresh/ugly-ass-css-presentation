@@ -1,0 +1,12 @@
+title: PosAbsolute
+
+meta:
+  id: '' # can be number or string, used for ordering
+  status: '' # dev, qa, feedback, done
+  notes: '' # add some information about the page
+  category: '' # to group pages in the overview
+
+blocks:
+  - name: "pos-absolute"
+    data: "import!../app/component/block/pos-absolute/data"
+

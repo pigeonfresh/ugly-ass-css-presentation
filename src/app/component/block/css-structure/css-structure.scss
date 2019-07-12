@@ -1,0 +1,14 @@
+.css-structure {
+
+  .visual-wrapper {
+    max-width: 1200px;
+  }
+
+  .visual {
+    max-width: 100%;
+
+    &:not(:first-of-type) {
+      margin-top: 1rem;
+    }
+  }
+}

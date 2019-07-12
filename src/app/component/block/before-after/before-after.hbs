@@ -1,0 +1,50 @@
+<link rel="stylesheet" href="./before-after.scss">
+<script src="./BeforeAfter.ts"></script>
+
+<div class="before-after" data-component="before-after">
+  <h1>Before and After</h1>
+  <p>
+    Before and after are pseudo elements. They 'fake' an html element within the element you are adding it too: <br>
+    <span class="code">.foo::before {}</span>
+    Here I use befores/afters and currentColor to minimze the amount of specificity.
+  </p>
+  <p>
+    In the examples below I use it to create borders and backgrounds. And I comnbine it with currentColor to be able to update just the color and get all the effects applied.
+  </p>
+  <p>
+    That's how I don't have to write something like this:
+    <span class="code">
+      color: 1px solid rgba($colorPrimary, 0.75); <br>
+      background: $colorPrimary; <br>
+      border-color: rgba($colorPrimary, 0.5);
+    </span>
+  </p>
+
+  <div class="example-wrapper">
+
+    <div class="copy-block primary">
+      <h2>Primary block</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, distinctio!</p>
+      <a href="#" class="link">
+        <span class="copy">Read more</span>
+      </a>
+    </div>
+
+    <div class="copy-block secondary">
+      <h2>Primary block</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, distinctio!</p>
+      <a href="#" class="link">
+        <span class="copy">Read more</span>
+      </a>
+    </div>
+
+    <div class="copy-block tertiary">
+      <h2>Primary block</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, distinctio!</p>
+      <a href="#" class="link">
+        <span class="copy">Read more</span>
+      </a>
+    </div>
+  </div>
+  {{> ugly-ass-link href="css-variables" }}
+</div>

@@ -1,0 +1,23 @@
+.grid-container {
+  height: 400px;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.foo {
+  background: red;
+
+  &:nth-child(1) { grid-area: 3 / 3 / 4 / 4;
+    background: magenta;
+    color: #fff;
+
+    &:before {
+      content: '3/3/4/4'
+    }
+  }
+}

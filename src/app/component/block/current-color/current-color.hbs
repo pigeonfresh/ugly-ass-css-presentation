@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="./current-color.scss">
+<script src="./CurrentColor.ts"></script>
+
+<div class="current-color" data-component="current-color">
+  <h1>current-color</h1>
+  <p>
+    currentColor is a css variable before css variables were introduced *mindblown* <br>
+    It is similar to inherit. BUT inherit gets the value of the parents property.
+  </p>
+  <p>
+    This means: that border-color will inherit the color from the parents border color
+    currentColor will get the color of the color property!
+    <span class="code">.foo { color: red; } .foo .bar { background: currentColor; }</span>
+  </p>
+
+  <div class="example-wrapper">
+    <div class="foo">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, sunt!
+      </p>
+    </div>
+    <a href="#" class="link primary">
+      <span class="copy">
+        Primary color
+      </span>
+    </a>
+    <a href="#" class="link secondary">
+      <span class="copy">
+        Primary color
+      </span>
+    </a>
+  </div>
+
+  {{> ugly-ass-link href="before-after" }}
+</div>

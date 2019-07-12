@@ -1,0 +1,36 @@
+$zLayout: default, subpopup, popup, overlay;
+
+
+.z-index-management {
+  position: relative;
+
+  .box {
+    position: relative;
+    width: 400px;
+    height: 200px;
+
+    &:nth-child(2) {
+      margin-top: -100px;
+      margin-left: 100px;
+    }
+
+    &:nth-child(3) {
+      margin-top: -100px;
+      margin-left: 200px;
+    }
+  }
+
+  .foo {
+    background: magenta;
+  }
+
+  .overlay {
+    background: springgreen;
+    z-index: zindex($zLayout, overlay);
+  }
+
+  .popup {
+    background: mediumpurple;
+    z-index: zindex($zLayout, popup);
+  }
+}

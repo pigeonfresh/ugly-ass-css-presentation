@@ -1,0 +1,14 @@
+.display-inline-block {
+
+  .list {
+    background: red;
+    font-size: 0;
+  }
+
+  .list-item {
+    width: 33.333333%;
+    display: inline-block;
+    font-size: 12px;
+  }
+
+}
